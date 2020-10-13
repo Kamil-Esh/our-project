@@ -184,4 +184,95 @@ li {
   color: white;
   text-decoration: none;
 }
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fafafa;
+}
+
+.contact__form {
+  border-radius: 20px;
+  margin: 50px 0;
+  text-align: center;
+  max-width: 750px;
+}
+
+.contact__top-title {
+  margin: 30px 0;
+}
+
+.contact__top-desc {
+  margin-bottom: 50px;
+}
+
+.contact__input {
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 10px 0;
+  width: 100%;
+  margin-bottom: 35px;
+  background-color: #fafafa;
+}
+
+.contact__btn {
+  color: #ffffff;
+  border: 2px solid #4e5fe0;
+  background-color: #4e5fe0;
+  font-size: 16px;
+  padding: 0 60px;
+  height: 60px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.contact__btn:hover {
+  background-color: #ffffff;
+  color: #71a0a5;
+}
+
+.footer {
+  height: 150px;
+  background: #C4C4C4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__contact-email a {
+  color: black;
+}
+
+.footer__logo {
+  text-align: center;
+}
+
+.footer__phone a {
+  color: black;
+}
 /*# sourceMappingURL=style.css.map */
