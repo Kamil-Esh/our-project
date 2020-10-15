@@ -18,7 +18,9 @@
     .social-contacts {
         margin-left: 25px;
     }
-
+    .plus-it-title {
+        font-size: 65px;
+    }
 
     .box-item-title {
         font-size: 26px;
@@ -104,8 +106,8 @@
     }
 
     .box-item img {
-        width: 200px;
-        height: 150px;
+        width: 250px;
+        height: 170px;
     }
 
     .plus-it {
@@ -162,9 +164,6 @@
         width: 120px;
     }
 
-    .contact__form {
-        padding: 0 50px;
-    }
 }
 
 @media (max-width: 768px) {
@@ -183,12 +182,15 @@
 
     .mobile-menu {
         display: flex;
-        z-index: 2;
+        position: fixed;
+        z-index: 11;
+        top: -65%;
     }
 
     .top-menu {
         display: none;
         max-width: unset;
+        z-index: 10;
     }
 
     .top-menu {
@@ -226,7 +228,9 @@
     .title-welcome {
         font-size: 45px;
     }
-
+    .box-item {
+        width: 100%;
+    }
     .desc-world {
         font-size: 30px;
     }
@@ -236,7 +240,7 @@
     }
 
     .plus-it-title {
-        font-size: 39px;
+        font-size: 28px;
     }
 
     .plus-it-title:before {
@@ -247,7 +251,7 @@
     }
 
     .plus-it {
-        height: 150vh;
+        height: 170vh;
     }
 
     .summary__title::before {
@@ -261,11 +265,13 @@
     .founders__item {
         margin-bottom: 20px;
     }
+    .founders__title {
+        font-size: 27px;
+    }
 
     .summary__title {
         font-size: 27px;
     }
-
     .summary__post {
         font-size: 20px;
     }
@@ -278,9 +284,6 @@
         font-size: 29px;
     }
 
-    .contact__form {
-        padding: 0 50px;
-    }
 
     .footer__logo img {
         display: none;
@@ -346,7 +349,7 @@
     }
 
     .founders__title {
-        font-size: 28px;
+        font-size: 19px;
         margin: 15px 0;
     }
 
@@ -357,6 +360,7 @@
     .summary__title {
         line-height: 35px;
         margin: 10px 0 10px;
+        font-size: 18px;
     }
 
     .summary__title::before {
