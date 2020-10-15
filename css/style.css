@@ -88,6 +88,9 @@ header .container {
   font-size: 20px;
   border: none;
 }
+.search-input:focus {
+  outline: 0;
+}
 
 .search svg {
   position: absolute;
@@ -433,7 +436,7 @@ header .container {
   align-items: center;
 }
 .weekend{
-  background: url("../images/weekend.jpeg") no-repeat center/cover;
+  background: #676767;
 }
 .owl-next{
   position: absolute;
@@ -451,7 +454,7 @@ header .container {
   font-size: 65px;
   line-height: 82px;
   text-align: center;
-  color: #ffffff;
+  color: black;
   padding-top: 20px;
   font-family: 'Kanit', sans-serif;
 }
@@ -499,7 +502,6 @@ header .container {
 .w-50{
   width: 50%;
 }
-
 .contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -538,6 +540,9 @@ header .container {
   width: 100%;
   margin-bottom: 35px;
 }
+.contact__input:focus {
+    outline: 0;
+  }
 
 .contact__btn {
   color: #ffffff;
