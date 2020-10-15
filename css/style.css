@@ -4,7 +4,9 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Kanit', sans-serif;
 }
@@ -21,7 +23,6 @@ img {
 li {
   list-style: none;
 }
-
 .container {
   max-width: 1170px;
   margin: 0 auto;
@@ -44,6 +45,7 @@ header .container {
   font-size: 25px;
   line-height: 29px;
   width: 416px;
+  transition: .5s;
 }
 
 .top-menu-item:not(:last-child) {
@@ -52,6 +54,7 @@ header .container {
 
 .top-menu-item:hover {
   color: #5277ff;
+  text-decoration: none;
 }
 
 .logo img {
@@ -70,6 +73,7 @@ header .container {
 
 .bx:hover {
   color: #5277ff;
+  text-decoration: none;
 }
 
 .bxl-facebook, .bxl-instagram, .bxl-youtube {
@@ -178,13 +182,18 @@ header .container {
   background: #0A3DFA;
   border: 2px solid #FFFFFF;
   border-radius: 15px;
+  transition: .5s;
 }
 
 .btn-call:active {
   background: #5277ff;
   color: black;
+  text-decoration: none;
 }
-
+.btn-call:hover {
+  background: white;
+  color: #0a3dfa;
+}
 .plus-it {
   background: url("../images/bg-plus-it.jpeg") no-repeat center/cover;
   height: 100vh;
@@ -436,7 +445,7 @@ header .container {
   align-items: center;
 }
 .weekend{
-  background: #676767;
+  background: #e0e0e0;
 }
 .owl-next{
   position: absolute;
@@ -564,7 +573,7 @@ header .container {
 }
 
 .footer {
-  height: 150px;
+  height: 200px;
   background: #C4C4C4;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -606,5 +615,7 @@ header .container {
 .footer__phone a {
   color: black;
 }
-
+.footer_logo_desc {
+  font-size: 15px;
+}
 /*# sourceMappingURL=style.css.map */
