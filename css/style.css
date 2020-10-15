@@ -148,15 +148,12 @@ header .container {
   border-radius: 10px;
 }
 .hero {
-  background: url("../images/bg-hero.jpeg") no-repeat center/cover;
-  height: 100vh;
-}
-
-.hero {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  background: url("../images/bg-hero.jpeg")fixed no-repeat center/cover;
+  min-height: 100vh;
 }
 
 .title-welcome {
@@ -172,43 +169,37 @@ header .container {
   line-height: 59px;
   margin-bottom: 29px;
 }
-
-.btn-call {
-  font-size: 35px;
-  line-height: 41px;
-  color: white;
-  width: 250px;
-  height: 50px;
-  background: #0A3DFA;
-  border: 2px solid #FFFFFF;
-  border-radius: 15px;
-  transition: .5s;
+.bx-down-arrow-circle{
+    font-size: 40px;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 10%;
+    right: 50%;
+    transform: translatex(50%);
 }
 
-.btn-call:active {
-  background: #5277ff;
-  color: black;
-  text-decoration: none;
+.bx-down-arrow-circle:hover{
+    color: white;
 }
-.btn-call:hover {
-  background: white;
-  color: #0a3dfa;
-}
+
+
 .plus-it {
   background: url("../images/bg-plus-it.jpeg") no-repeat center/cover;
-  height: 100vh;
-  padding: 50px 85px 110px;
+  min-height: 100vh;
+  padding: 50px 0 110px;
 }
 
 .plus-it-title {
   font-size: 70px;
   line-height: 82px;
   text-align: center;
-  background: linear-gradient(180deg, #FFFFFF 47.92%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, #2400FF, #2400ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: white;
   position: relative;
   margin-bottom: 60px;
+}
+.plus-it-title span{
+    font-weight: 700;
+    color: #000000;
 }
 
 .plus-it-title:before {
@@ -222,14 +213,14 @@ header .container {
   margin: auto;
 }
 
-.box-item {
+.plus-it-box {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.box-item-blue, .box-item-yellow, .box-item-red, .box-item-purple {
-  width: 500px;
+.box-item {
+  width: 50%;
   height: 300px;
   text-align: center;
 }
@@ -256,7 +247,9 @@ header .container {
   line-height: 35px;
   padding: 20px 0 25px;
 }
-
+.founders-wave{
+  margin-top: -1px;
+}
 
 .founders {
   background-color: #f4f7fc;
@@ -267,7 +260,7 @@ header .container {
   color: #000f30;
   font-size: 46px;
   font-weight: 800;
-  margin: 35px 0;
+  padding: 35px 0;
 }
 
 .founders__item {
@@ -327,13 +320,13 @@ header .container {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-bottom: -1px;
 }
 
 .summary__title {
-  font-weight: bold;
-  font-size: 70px;
-  line-height: 82px;
-  color: #000000;
+    color: #000f30;
+    font-size: 46px;
+    font-weight: 800;
   margin: 30px 0 40px;
   position: relative;
 }
@@ -477,7 +470,7 @@ header .container {
   background: rgba(255, 255, 255, 0.4);
   border-radius: 30px;
   color: #FFFFFF;
-  top: 0px;
+  top: 0;
   left: -48px;
   text-align: center;
   display: inline-block;
